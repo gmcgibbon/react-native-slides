@@ -1,0 +1,30 @@
+{
+  "name": "react-native-slides",
+  "version": "1.0.0",
+  "description": "React Native (0.5.4) Slideshow",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/coffeelint ./",
+    "server": "node_modules/.bin/gulp server",
+    "build": "node_modules/.bin/gulp build"
+  },
+  "author": "Gannon McGibbon",
+  "license": "MIT",
+  "repository": "git@github.com:gmcgibbon/react-native-slides.git",
+  "dependencies": {
+    "headjs": "^1.0.3",
+    "highlight.js": "^9.12.0",
+    "reveal.js": "^3.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "coffee-script": "^1.12.6",
+    "coffeelint": "^1.16.0",
+    "gulp": "^4.0.0",
+    "gulp-coffee": "^3.0.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
