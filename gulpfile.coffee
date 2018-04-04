@@ -33,7 +33,7 @@ gulp.task 'markdown', ->
     .pipe gulp.dest('./dist')
 
 gulp.task 'assets', ->
-  gulp.src "./node_modules/gulp.(#{app.assets.join('|')})/**"
+  gulp.src "./node_modules/@(#{app.assets.join('|')})/**"
     .pipe plumber()
     .pipe gulp.dest('./dist/vendor')
 
