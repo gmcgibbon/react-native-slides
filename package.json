@@ -1,7 +1,12 @@
 {
   "name": "react-native-slides",
   "version": "1.0.0",
-  "description": "React Native (0.5.4) Slideshow",
+  "description": "React Native Slideshow",
+  "keywords": [
+    "React",
+    "Native",
+    "0.5.5"
+  ],
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/.bin/coffeelint ./",

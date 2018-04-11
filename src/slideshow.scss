@@ -5,3 +5,7 @@ pre {
 img {
   border: none !important;
 }
+
+.reveal pre code {
+  max-height: 408px;
+}
