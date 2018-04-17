@@ -38,7 +38,7 @@ gulp.task 'assets', ->
   rules =
   gulp.src [
     "./node_modules/@(#{app.assets.join('|')})/**",
-    "!./node_modules/@(#{app.assets.join('|')})/_*/**"
+    "!./node_modules/headjs/!(dist)/**",
   ]
     .pipe plumber()
     .pipe gulp.dest('./dist/vendor')
