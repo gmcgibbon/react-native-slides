@@ -4,7 +4,6 @@ do ->
   startApp = ->
     head.load(
       'vendor/prismjs/components/prism-jsx.js',
-      'copy.js'
       onLoad
     )
   startSlideshow = ->
