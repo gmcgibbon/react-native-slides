@@ -11,7 +11,5 @@ git commit --allow-empty -m "Init ${BRANCH_NAME}"
 git push -u origin $BRANCH_NAME
 git co -f -
 git submodule add -b $BRANCH_NAME -f $ORIGIN_NAME $FOLDER_NAME
-yarn run build
-cd $FOLDER_NAME
-git add .
-cd ..
+
+./update-gh-pages
