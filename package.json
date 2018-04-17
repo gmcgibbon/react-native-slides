@@ -12,7 +12,8 @@
     "lint": "node_modules/.bin/coffeelint ./",
     "server": "node_modules/.bin/gulp server",
     "build": "node_modules/.bin/gulp build",
-    "init-gh-pages": "bin/init-gh-pages"
+    "init-gh-pages": "bin/init-gh-pages",
+    "update-gh-pages": "bin/update-gh-pages"
   },
   "author": "Gannon McGibbon",
   "license": "MIT",
