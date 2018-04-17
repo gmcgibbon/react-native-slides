@@ -4,6 +4,7 @@ plumber = require 'gulp-plumber'
 coffee  = require 'gulp-coffee'
 sass    = require 'gulp-sass'
 pug     = require 'gulp-pug'
+babel   = require 'gulp-babel'
 uglify  = require 'gulp-uglify'
 bs      = require 'browser-sync'
   .create()
@@ -11,7 +12,8 @@ bs      = require 'browser-sync'
 gulp.task 'coffee', ->
   gulp.src('./src/**/*.coffee')
     .pipe plumber()
-    .pipe coffee()
+    .pipe coffee({ bare: true })
+    .pipe babel()
     .pipe uglify()
     .pipe gulp.dest('./dist')
 
@@ -33,7 +35,7 @@ gulp.task 'markdown', ->
     .pipe gulp.dest('./dist')
 
 gulp.task 'assets', ->
-  gulp.src "./node_modules/gulp.(#{app.assets.join('|')})/**"
+  gulp.src "./node_modules/@(#{app.assets.join('|')})/**"
     .pipe plumber()
     .pipe gulp.dest('./dist/vendor')
 

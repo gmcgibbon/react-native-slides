@@ -1,7 +1,12 @@
 {
   "name": "react-native-slides",
   "version": "1.0.0",
-  "description": "React Native (0.5.4) Slideshow",
+  "description": "React Native Slideshow",
+  "keywords": [
+    "React",
+    "Native",
+    "0.5.5"
+  ],
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/.bin/coffeelint ./",
@@ -13,14 +18,17 @@
   "repository": "git@github.com:gmcgibbon/react-native-slides.git",
   "dependencies": {
     "headjs": "^1.0.3",
-    "highlight.js": "^9.12.0",
+    "prismjs": "^1.13.0",
     "reveal.js": "^3.6.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.12",
     "coffee-script": "^1.12.6",
     "coffeelint": "^1.16.0",
     "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
     "gulp-coffee": "^3.0.2",
     "gulp-plumber": "^1.2.0",
     "gulp-pug": "^3.3.0",
