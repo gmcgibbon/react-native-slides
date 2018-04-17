@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BRANCH_NAME="${1:-gh-pages}"
+FOLDER_NAME="./${2:-dist}"
+ORIGIN_NAME="$(git remote get-url origin)"
+
+yarn run build
+cd $FOLDER_NAME
+git add .
+git commit -m "Update gh-pages"
+cd ..

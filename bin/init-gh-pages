@@ -1,0 +1,15 @@
+#!/bin/bash
+
+BRANCH_NAME="${1:-gh-pages}"
+FOLDER_NAME="./${2:-dist}"
+ORIGIN_NAME="$(git remote get-url origin)"
+
+rm -rf $FOLDER_NAME
+git checkout --orphan $BRANCH_NAME
+git reset .
+git commit --allow-empty -m "Init ${BRANCH_NAME}"
+git push -u origin $BRANCH_NAME
+git co -f -
+git submodule add -b $BRANCH_NAME -f $ORIGIN_NAME $FOLDER_NAME
+
+./update-gh-pages
