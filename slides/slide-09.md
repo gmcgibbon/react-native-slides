@@ -49,10 +49,10 @@ You can safely interpolate values into JSX. This includes anything from user inp
 
 ```jsx
 let items          = [{ id: 1, name: "Apples" }]
-let listAttributes = { id: className: "shopping-list" }
-let listItem       = items.map((item) => {
+let listAttributes = { className: "shopping-list" }
+let listItems      = items.map((item) => {
   return <li key={item.id}>{item.name}</li>
 })
-let list = <ul { ...listAttributes } >{listItems}</ul>
+let list = <ul { ...listAttributes }>{listItems}</ul>
 
 ```

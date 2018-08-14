@@ -10,7 +10,7 @@ As we've seen, React Native provides basic UI elements for your app. There's als
 import React, { Component }          from 'react'
 import { View, Text, DatePickerIOS } from 'react-native'
 
-export default class Form extends React.Component {
+export default class Form extends Component {
   render () {
     return (
       <View>
