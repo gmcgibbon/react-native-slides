@@ -13,7 +13,7 @@ Vertical:
 React Native provides components to use in place of DOM elements. These hook into native UI classes.
 
 ```jsx
-import React, { Component } from 'react'
+import React    from 'react'
 import { Text } from 'react-native'
 
 export default class Greeting extends React.Component {
@@ -30,7 +30,7 @@ Vertical:
 You can define stylesheets in JavaScript with the `StyleSheet` API and style props.
 
 ```jsx
-import React, { Component } from 'react'
+import React                from 'react'
 import { Text, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
